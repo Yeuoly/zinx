@@ -3,7 +3,8 @@ package zlog
 import (
 	"context"
 	"fmt"
-	"github.com/aceld/zinx/ziface"
+
+	"github.com/Yeuoly/zinx/ziface"
 )
 
 var zLogInstance ziface.ILogger = new(zinxDefaultLog)

@@ -2,10 +2,10 @@ package znotify
 
 import (
 	"fmt"
-	"github.com/aceld/zinx/zconf"
-	"github.com/aceld/zinx/ziface"
-	"github.com/aceld/zinx/znet"
-	"github.com/aceld/zinx/zpack"
+	"github.com/Yeuoly/zinx/zconf"
+	"github.com/Yeuoly/zinx/ziface"
+	"github.com/Yeuoly/zinx/znet"
+	"github.com/Yeuoly/zinx/zpack"
 	"net"
 	"strconv"
 	"testing"

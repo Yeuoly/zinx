@@ -3,10 +3,10 @@ package router
 import (
 	"bytes"
 	"encoding/hex"
-	"github.com/aceld/zinx/zdecoder"
-	"github.com/aceld/zinx/ziface"
-	"github.com/aceld/zinx/zlog"
-	"github.com/aceld/zinx/znet"
+	"github.com/Yeuoly/zinx/zdecoder"
+	"github.com/Yeuoly/zinx/ziface"
+	"github.com/Yeuoly/zinx/zlog"
+	"github.com/Yeuoly/zinx/znet"
 )
 
 type Data0x10Router struct {

@@ -3,14 +3,15 @@ package znet
 import (
 	"crypto/tls"
 	"fmt"
-	"github.com/aceld/zinx/zconf"
-	"github.com/aceld/zinx/zdecoder"
-	"github.com/aceld/zinx/ziface"
-	"github.com/aceld/zinx/zlog"
-	"github.com/aceld/zinx/zpack"
-	"github.com/gorilla/websocket"
 	"net"
 	"time"
+
+	"github.com/Yeuoly/zinx/zconf"
+	"github.com/Yeuoly/zinx/zdecoder"
+	"github.com/Yeuoly/zinx/ziface"
+	"github.com/Yeuoly/zinx/zlog"
+	"github.com/Yeuoly/zinx/zpack"
+	"github.com/gorilla/websocket"
 )
 
 type Client struct {

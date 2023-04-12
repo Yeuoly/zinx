@@ -22,10 +22,11 @@ package zdecoder
 
 import (
 	"encoding/hex"
-	"github.com/aceld/zinx/ziface"
-	"github.com/aceld/zinx/zlog"
 	"math"
 	"unsafe"
+
+	"github.com/Yeuoly/zinx/ziface"
+	"github.com/Yeuoly/zinx/zlog"
 )
 
 const HEADER_SIZE = 5

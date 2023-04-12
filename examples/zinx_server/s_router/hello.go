@@ -1,16 +1,16 @@
 package s_router
 
 import (
-	"github.com/aceld/zinx/ziface"
-	"github.com/aceld/zinx/zlog"
-	"github.com/aceld/zinx/znet"
+	"github.com/Yeuoly/zinx/ziface"
+	"github.com/Yeuoly/zinx/zlog"
+	"github.com/Yeuoly/zinx/znet"
 )
 
 type HelloZinxRouter struct {
 	znet.BaseRouter
 }
 
-//HelloZinxRouter Handle
+// HelloZinxRouter Handle
 func (this *HelloZinxRouter) Handle(request ziface.IRequest) {
 	zlog.Debug("Call HelloZinxRouter Handle")
 	//先读取客户端的数据，再回写ping...ping...ping

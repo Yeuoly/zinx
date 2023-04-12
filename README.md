@@ -22,7 +22,7 @@ Zinx is a lightweight concurrent server framework based on Golang.
 ---
 ## Source of Zinx
 ### Github
-Git: https://github.com/aceld/zinx
+Git: https://github.com/Yeuoly/zinx
 
 ### Gitee(China)
 Git: https://gitee.com/Aceld/zinx
@@ -99,7 +99,7 @@ Of course, I hope that more people will join Zinx and give us valuable suggestio
 DownLoad zinx Source
 
 ```bash
-$go get github.com/aceld/zinx
+$go get github.com/Yeuoly/zinx
 ```
 
 > note: Golang Version 1.16+
@@ -110,8 +110,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/aceld/zinx/ziface"
-	"github.com/aceld/zinx/znet"
+	"github.com/Yeuoly/zinx/ziface"
+	"github.com/Yeuoly/zinx/znet"
 )
 
 // PingRouter MsgId=1 
@@ -200,8 +200,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/aceld/zinx/ziface"
-	"github.com/aceld/zinx/znet"
+	"github.com/Yeuoly/zinx/ziface"
+	"github.com/Yeuoly/zinx/znet"
 	"time"
 )
 
@@ -296,7 +296,7 @@ recv from client : msgId= 1 , data= Ping...Ping...Ping...[FromClient]
 
 |  **Zinx**   | **Authors**  |
 |  ----  | ----  | 
-|[zinx](https://github.com/aceld/zinx)|刘丹冰([@aceld](https://github.com/aceld)) 张超([@zhngcho](https://github.com/zhngcho)) 高智辉Roger([@adsian](https://github.com/adsian)) 胡贵建([@huguijian](https://github.com/huguijian)) 张继瑀([@kstwoak](https://github.com/kstwoak)) 夏小力([@xxl6097](https://github.com/xxl6097)) 李志成([@clukboy](https://github.com/clukboy)）|
+|[zinx](https://github.com/Yeuoly/zinx)|刘丹冰([@aceld](https://github.com/aceld)) 张超([@zhngcho](https://github.com/zhngcho)) 高智辉Roger([@adsian](https://github.com/adsian)) 胡贵建([@huguijian](https://github.com/huguijian)) 张继瑀([@kstwoak](https://github.com/kstwoak)) 夏小力([@xxl6097](https://github.com/xxl6097)) 李志成([@clukboy](https://github.com/clukboy)）|
 |[zinx(C++)](https://github.com/marklion/zinx) |刘洋([@marklion](https://github.com/marklion))|
 |[zinx(Lua)](https://github.com/huqitt/zinx-lua)|胡琪([@huqitt](https://github.com/huqitt))|
 |[ginx(Java)](https://github.com/ModuleCode/ginx)|ModuleCode([@ModuleCode](https://github.com/ModuleCode))|
@@ -305,7 +305,7 @@ recv from client : msgId= 1 , data= Ping...Ping...Ping...[FromClient]
 
 Thanks to all the developers who contributed to Zinx!
 
-<a href="https://github.com/aceld/zinx/graphs/contributors">
+<a href="https://github.com/Yeuoly/zinx/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=aceld/zinx" />
 </a>    
 

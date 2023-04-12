@@ -11,13 +11,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/aceld/zinx/zconf"
-	"github.com/aceld/zinx/zinterceptor"
-	"github.com/aceld/zinx/zlog"
-	"github.com/aceld/zinx/zpack"
+	"github.com/Yeuoly/zinx/zconf"
+	"github.com/Yeuoly/zinx/zinterceptor"
+	"github.com/Yeuoly/zinx/zlog"
+	"github.com/Yeuoly/zinx/zpack"
 	"github.com/gorilla/websocket"
 
-	"github.com/aceld/zinx/ziface"
+	"github.com/Yeuoly/zinx/ziface"
 )
 
 // Connection Tcp连接模块

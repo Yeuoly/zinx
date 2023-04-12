@@ -7,7 +7,7 @@
 package zinterceptor
 
 import (
-	"github.com/aceld/zinx/ziface"
+	"github.com/Yeuoly/zinx/ziface"
 )
 
 // Interceptor 基于LengthField规则的拦截器

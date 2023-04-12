@@ -8,11 +8,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/aceld/zinx/examples/zinx_client/c_router"
-	"github.com/aceld/zinx/ziface"
-	"github.com/aceld/zinx/zlog"
-	"github.com/aceld/zinx/znet"
-	"github.com/aceld/zinx/zpack"
+	"github.com/Yeuoly/zinx/examples/zinx_client/c_router"
+	"github.com/Yeuoly/zinx/ziface"
+	"github.com/Yeuoly/zinx/zlog"
+	"github.com/Yeuoly/zinx/znet"
+	"github.com/Yeuoly/zinx/zpack"
 	"io"
 	"net"
 	"os"

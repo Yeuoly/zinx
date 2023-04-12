@@ -3,8 +3,8 @@ package znotify
 import (
 	"errors"
 	"fmt"
-	"github.com/aceld/zinx/ziface"
-	"github.com/aceld/zinx/zlog"
+	"github.com/Yeuoly/zinx/ziface"
+	"github.com/Yeuoly/zinx/zlog"
 	"sync"
 )
 

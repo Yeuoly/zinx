@@ -6,7 +6,7 @@
 
 package zinterceptor
 
-import "github.com/aceld/zinx/ziface"
+import "github.com/Yeuoly/zinx/ziface"
 
 // Builder 责任链构造器
 type Builder struct {

@@ -3,16 +3,16 @@ package main
 import (
 	"fmt"
 
-	"github.com/aceld/zinx/ziface"
-	"github.com/aceld/zinx/znet"
+	"github.com/Yeuoly/zinx/ziface"
+	"github.com/Yeuoly/zinx/znet"
 )
 
-//ping test 自定义路由
+// ping test 自定义路由
 type PingRouter struct {
 	znet.BaseRouter
 }
 
-//Test Handle
+// Test Handle
 func (this *PingRouter) Handle(request ziface.IRequest) {
 	fmt.Println("Call PingRouter Handle")
 	//先读取客户端的数据，再回写ping...ping...ping

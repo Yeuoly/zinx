@@ -4,15 +4,16 @@ import (
 	"context"
 	"encoding/hex"
 	"errors"
-	"github.com/aceld/zinx/zconf"
-	"github.com/aceld/zinx/ziface"
-	"github.com/aceld/zinx/zinterceptor"
-	"github.com/aceld/zinx/zlog"
-	"github.com/aceld/zinx/zpack"
-	"github.com/gorilla/websocket"
 	"net"
 	"sync"
 	"time"
+
+	"github.com/Yeuoly/zinx/zconf"
+	"github.com/Yeuoly/zinx/ziface"
+	"github.com/Yeuoly/zinx/zinterceptor"
+	"github.com/Yeuoly/zinx/zlog"
+	"github.com/Yeuoly/zinx/zpack"
+	"github.com/gorilla/websocket"
 )
 
 // WsConnection Websocket连接模块

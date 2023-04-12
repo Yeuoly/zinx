@@ -6,32 +6,20 @@ import (
 	"crypto/tls"
 	"errors"
 	"fmt"
-	"github.com/aceld/zinx/zconf"
-	"github.com/aceld/zinx/zdecoder"
-	"github.com/aceld/zinx/zlog"
-	"github.com/gorilla/websocket"
 	"net"
 	"net/http"
 	"os"
 	"os/signal"
 	"time"
 
-	"github.com/aceld/zinx/ziface"
-	"github.com/aceld/zinx/zpack"
-)
+	"github.com/Yeuoly/zinx/zconf"
+	"github.com/Yeuoly/zinx/zdecoder"
+	"github.com/Yeuoly/zinx/zlog"
+	"github.com/gorilla/websocket"
 
-var zinxLogo = `                                        
-              ██                        
-              ▀▀                        
- ████████   ████     ██▄████▄  ▀██  ██▀ 
-     ▄█▀      ██     ██▀   ██    ████   
-   ▄█▀        ██     ██    ██    ▄██▄   
- ▄██▄▄▄▄▄  ▄▄▄██▄▄▄  ██    ██   ▄█▀▀█▄  
- ▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀  ▀▀    ▀▀  ▀▀▀  ▀▀▀ 
-                                        `
-var topLine = `┌──────────────────────────────────────────────────────┐`
-var borderLine = `│`
-var bottomLine = `└──────────────────────────────────────────────────────┘`
+	"github.com/Yeuoly/zinx/ziface"
+	"github.com/Yeuoly/zinx/zpack"
+)
 
 // Server 接口实现，定义一个Server服务类
 type Server struct {
@@ -66,8 +54,6 @@ type Server struct {
 
 // NewServer 创建一个服务器句柄
 func NewServer(opts ...Option) ziface.IServer {
-	printLogo()
-
 	s := &Server{
 		Name:       zconf.GlobalObject.Name,
 		IPVersion:  "tcp",
@@ -91,16 +77,11 @@ func NewServer(opts ...Option) ziface.IServer {
 		opt(s)
 	}
 
-	//提示当前配置信息
-	zconf.GlobalObject.Show()
-
 	return s
 }
 
 // NewServer 创建一个服务器句柄
 func NewUserConfServer(config *zconf.Config, opts ...Option) ziface.IServer {
-	//打印logo
-	printLogo()
 
 	s := &Server{
 		Name:       config.Name,
@@ -125,9 +106,6 @@ func NewUserConfServer(config *zconf.Config, opts ...Option) ziface.IServer {
 	}
 	//刷新用户配置到全局配置变量
 	zconf.UserConfToGlobal(config)
-
-	//提示当前配置信息
-	zconf.GlobalObject.Show()
 
 	return s
 }
@@ -390,19 +368,6 @@ func (s *Server) GetLengthField() *ziface.LengthField {
 
 func (s *Server) AddInterceptor(interceptor ziface.IInterceptor) {
 	s.msgHandler.AddInterceptor(interceptor)
-}
-
-func printLogo() {
-	fmt.Println(zinxLogo)
-	fmt.Println(topLine)
-	fmt.Println(fmt.Sprintf("%s [Github] https://github.com/aceld                    %s", borderLine, borderLine))
-	fmt.Println(fmt.Sprintf("%s [tutorial] https://www.yuque.com/aceld/npyr8s/bgftov %s", borderLine, borderLine))
-	fmt.Println(fmt.Sprintf("%s [document] https://www.yuque.com/aceld/tsgooa        %s", borderLine, borderLine))
-	fmt.Println(bottomLine)
-	fmt.Printf("[Zinx] Version: %s, MaxConn: %d, MaxPacketSize: %d\n",
-		zconf.GlobalObject.Version,
-		zconf.GlobalObject.MaxConn,
-		zconf.GlobalObject.MaxPacketSize)
 }
 
 func init() {}

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/aceld/zinx/examples/zinx_server/s_router"
-	"github.com/aceld/zinx/znet"
+	"github.com/Yeuoly/zinx/examples/zinx_server/s_router"
+	"github.com/Yeuoly/zinx/znet"
 )
 
 func main() {

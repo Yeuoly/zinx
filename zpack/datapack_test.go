@@ -2,17 +2,18 @@ package zpack
 
 import (
 	"fmt"
-	"github.com/aceld/zinx/ziface"
 	"io"
 	"net"
 	"testing"
 	"time"
+
+	"github.com/Yeuoly/zinx/ziface"
 )
 
 // run in terminal:
 // go test -v ./znet -run=TestDataPack
 
-//只是负责测试datapack拆包，封包功能
+// 只是负责测试datapack拆包，封包功能
 func TestDataPack(t *testing.T) {
 	//创建socket TCP Server
 	listener, err := net.Listen("tcp", "127.0.0.1:7777")

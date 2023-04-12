@@ -4,10 +4,10 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/aceld/zinx/zconf"
-	"github.com/aceld/zinx/ziface"
-	"github.com/aceld/zinx/zinterceptor"
-	"github.com/aceld/zinx/zlog"
+	"github.com/Yeuoly/zinx/zconf"
+	"github.com/Yeuoly/zinx/ziface"
+	"github.com/Yeuoly/zinx/zinterceptor"
+	"github.com/Yeuoly/zinx/zlog"
 )
 
 // MsgHandle 对消息的处理回调模块

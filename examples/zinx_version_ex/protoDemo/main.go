@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/hex"
 	"fmt"
-	"github.com/aceld/zinx/examples/zinx_version_ex/protoDemo/pb"
+	"github.com/Yeuoly/zinx/examples/zinx_version_ex/protoDemo/pb"
 	"github.com/golang/protobuf/proto"
 )
 
